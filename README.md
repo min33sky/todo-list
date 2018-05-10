@@ -1,3 +1,5 @@
-## TODO-LIST
+# TODO-LIST
 
-React & Styled-Components 로 구현하기
+*   Required
+    *   React
+    *   Styled-Components

@@ -5,8 +5,8 @@ const TodoListTemplate = ({ form, children }) => {
     return (
         <Main>
             <Header>오늘 할 일</Header>
-            <section>{form}</section>
-            <section>{children}</section>
+            <Form>{form}</Form>
+            <List>{children}</List>
         </Main>
     );
 };
@@ -26,6 +26,15 @@ const Header = styled.header`
     font-weight: 100;
     background: palevioletred;
     color: white;
+`;
+
+const Form = styled.section`
+    padding: 1rem;
+    border-bottom: 1px solid palevioletred;
+`;
+
+const List = styled.section`
+    min-height: 5rem;
 `;
 
 export default TodoListTemplate;
