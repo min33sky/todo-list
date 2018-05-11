@@ -5,10 +5,14 @@ const Form = ({ value, onChange, onCreate, onKeyPress }) => {
     return (
         <Container>
             <Input value={value} onChange={onChange} onKeyPress={onKeyPress} />
-            <Button onCreate={onCreate}>추가</Button>
+            <Button onClick={onCreate}>추가</Button>
         </Container>
     );
 };
+
+//
+// ----- Style -------------------------------------------
+//
 
 const Container = styled.div`
     display: flex;
@@ -20,6 +24,7 @@ const Input = styled.input`
     outline: none;
     border: none;
     border-bottom: 1px solid palevioletred;
+    color: palevioletred;
 `;
 
 const Button = styled.div`
@@ -30,7 +35,7 @@ const Button = styled.div`
     margin-left: 1rem;
     background: palevioletred;
     color: white;
-    border-radius: 3px;
+    border-radius: 6px;
     font-weight: 600;
     cursor: pointer;
 
